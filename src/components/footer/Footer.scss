@@ -1,0 +1,201 @@
+.footer{
+    background-color: rgba(64, 202, 163, 1);
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        width: 100%;
+        max-width: 1320px;
+        @include media(700){
+            display: block;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    &__left{
+        @include media(400){
+            margin-bottom: 20px;
+        }
+        @include media(600){
+            margin-bottom: 15px;
+        }
+        @include media(700){
+            margin-bottom: 25px;
+            width: 100%;
+        }
+        @include media(800){
+           width: 100%;
+           max-width: 400px;
+        }
+
+    }
+    &__logo{
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 12px;
+        @include media(800){
+            font-size: 24px;
+        }
+        @include media(600){
+            font-size: 20px;
+        }
+        @include media(450){
+            font-size: 18px;
+        }
+    }
+    &__tel{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 23px;
+        color: rgb(245, 95, 95);
+        @include media(800){
+            font-size: 20px;
+        font-weight: 700;
+        }
+        @include media(600){
+            font-size: 20px;
+        font-weight: 700;
+        }
+        @include media(450){
+            font-size: 16px;
+        font-weight: 500;
+        }
+    }
+    &__desc{
+        margin: 10px 0 15px 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color:rgb(220, 220, 220) ;
+    }
+    &__adress{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color:rgb(220, 220, 220) ;
+        margin-bottom: 8px;
+    }
+    &__middle{
+        @include media(400){
+            margin: 10px;
+        }
+        @include media(700){
+            margin: 0;
+            padding: 0;
+        }
+        @include media(800){
+            width: 100%;
+            max-width: 250px;
+            margin-left: 15px;
+        }
+    }
+    &__spn{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 19px;
+        color: rgb(220, 220, 220);
+    }
+    &__list{
+        @include media(400){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+        @include media(600){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+        @include media(700){
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+        @include media(700){
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        @include media(1000){
+            margin-left: 0;
+            padding-left: 0;
+        }
+        &-item{
+            margin-top: 10px;
+            img{
+                margin-right: 5px;
+            }
+        }
+        &-links{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            color: #fff;
+        }
+    }
+    &__right{
+        &-list{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+            @include media(1000){
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include media(700){
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                max-width: 280px;
+                width: 100%;
+            }
+            @include media(600){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                text-align: center;
+            }
+            @include media(400){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        &-item{
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        &-links{
+        }
+        &-img{
+            width: 95px;
+            height: 60px;
+            object-fit: cover;
+            @include media(700){
+                width: 80px;
+                height: 60px;
+            }
+            @include media(600){
+                width: 80px;
+                height: 55px;
+            }
+            @include media(550){
+                width: 70px;
+                height: 50px;
+            }
+        }
+    }
+}

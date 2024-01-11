@@ -1,0 +1,20 @@
+.ads{
+    @include media(850){
+        flex-direction: column;
+        gap: 0;
+    }
+    &__left{
+        &-img{
+            @include media(850){
+                display: none;
+            }
+        }
+    }
+    &__right{
+        &-img{
+            @include media(850){
+                display: none;
+            }
+        }
+    }
+}

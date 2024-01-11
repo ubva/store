@@ -1,0 +1,83 @@
+.productId{
+    &__wrapper{
+        margin: 30px;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 2px solid rgb(183, 178, 178);
+
+    }
+    &__img{
+        width:100%;
+        max-width: 500px;
+    }
+    &__box{
+        display: inline;
+        margin-left: 70px;
+    }
+    &__title{
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 25px; 
+        color: rgba(64, 202, 163, 1);
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    &__desc{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        color: rgb(155, 160, 159);
+        text-align: left;
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    &__price{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 20px;
+        color: rgb(77, 79, 78);
+    }
+    &__per{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: red;
+        color: rgba(255, 255, 255, 1);
+        padding: 8px;
+        margin: 2px;
+        border-radius: 12px;
+    }
+    &__stock{
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        color: rgb(181, 185, 183);
+        margin-bottom: 8px;
+    }
+    &__brand{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 20px;
+        display: block;
+        color: rgba(64, 202, 163, 1);
+        margin-bottom: 8px;
+    }
+    &__categ{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        color: rgb(181, 185, 183);
+        
+    }
+}

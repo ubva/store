@@ -1,0 +1,127 @@
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    @include media(1000){
+        padding: 20px 20px;
+    }
+    &__logo{
+        font-weight: 800;
+        line-height: 25px;
+        color:rgba(64, 202, 163, 1);
+        @include media(1000){
+            line-height: 20px;
+        }
+        @include media(600){
+            line-height: 18px;
+        }
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        max-width: 190px;
+    }
+    &__item{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 16px;
+        color:rgba(73, 89, 85, 1);
+
+    }
+    &__btn{
+        width: 100%;
+        max-width: 220px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px 1px rgba(212, 9, 9, 0.594);
+        padding: 3px 45px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        @include media(1000){
+            padding: 3px 20px;
+        }
+        @include media(600){
+            padding: 2px 20px;
+        }
+        &-text{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 16px;
+            color:rgba(255, 255, 255, 1);
+            margin: 12px 0;
+            @include media(1000){
+                font-size: 16px;
+                font-weight: 500;
+                margin: 10px 0;
+            }
+            @include media(600){
+                font-size: 14px;
+                font-weight: 500;
+                margin: 8px 0;
+            }
+        }
+    }
+}
+.navBottom{
+    background-color:rgba(64, 202, 163, 0.9);
+    padding: 30px 0;
+    @include media(1000){
+        padding: 25px 0;
+    }
+    @include media(600){
+        padding: 20px 0;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__select{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 18px;
+        color: rgba(64, 202, 163, 0.9);
+        padding: 5px;
+        border-radius: 15px;
+        border: 1px solid transparent;
+        @include media(1000){
+            font-size: 18px;
+            font-weight: 400;
+            padding: 4px;
+        }
+        @include media(600){
+            font-size: 18px;
+            font-weight: 400;
+            padding: 2px;
+        }
+        @include media(400){
+            font-size: 14px;
+            font-weight: 400;
+            padding: 2px;
+        }
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 1);
+    }
+}

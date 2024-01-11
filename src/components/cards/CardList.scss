@@ -1,0 +1,226 @@
+.cardList{
+    margin-bottom: 40px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        @include media(1000){
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        @include media(600){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        @include media(450){
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+        }
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @include media(450){
+            margin-top: 20px;
+        }
+    }
+    &__title{
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 25px;
+        color: rgba(73, 89, 85, 1);
+        @include media(1000){
+            font-size: 22px;
+        }
+        @include media(600){
+            font-size: 20px;
+        }
+        @include media(450){
+            font-size: 20px;
+        }
+        @include media(450){
+            font-size: 18px;
+        }
+    }
+    &__spn{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 16px;
+        background: rgba(64, 202, 163, 1);
+        padding: 15px 60px;
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 7px;
+        @include media(1000){
+            font-size: 18px;
+            padding: 12px 50px;
+        }
+        @include media(600){
+            font-size: 16px;
+            padding: 10px 35px;
+        }
+        @include media(450){
+            font-size: 16px;
+            font-weight: 500;
+            padding: 6px 10px;
+        }
+    }
+    &__icon{
+        display: flex;
+        justify-content: space-around;
+        color: rgba(64, 202, 163, 1);
+        margin: 50px 0;
+        align-items: center;
+        &-prev,&-next{
+            color: #40caa3;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+            @include media(1000){
+                font-size: 18px;
+                font-weight: 500;
+            }
+            @include media(600){
+                font-size: 18px;
+                font-weight: 500;
+            }
+            @include media(450){
+                font-size: 16px;
+                font-weight: 500;
+            }
+            img{
+                width: 18px;
+                @include media(1000){
+                    width: 16px;
+                }
+                @include media(600){
+                    width: 14px;
+                }
+                @include media(450){
+                    width: 12px;
+                }
+            }
+        }
+        &-prev{
+            img{
+                transform: rotate(180deg);
+            }
+        }
+        &-num{
+            display: flex;
+            gap: 15px;
+            font-weight: 600;
+            font-size: 27px;
+            @include media(1000){
+                font-weight: 500;
+                font-size: 24px;
+            }
+            @include media(600){
+                font-weight: 500;
+                font-size: 22px;
+            }
+            @include media(450){
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.cardListItem{
+    @include media(450){
+        margin: 0 auto;
+    }
+    &__box{
+        width: 100%;
+        max-width: 310px;
+        height: 425px;
+        border: 1px solid rgb(197, 202, 201);
+        border-radius: 12px;
+        box-shadow: 0px 2px 10px 1px rgba(36, 36, 36, 0.15);
+        padding: 15px 15px 20px 15px;
+        position: relative;
+    }
+    @include media(450){
+        max-width: 280px;
+    }
+    @include media(550){
+        max-width: 300px;
+    }
+    &__img{
+        width: 100%;
+        max-width: 300px;
+        height: 180px;
+        margin-bottom: 10px;
+        object-fit: contain;
+        object-position: center;
+    }
+    &__title{
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 25px; 
+        color: rgba(64, 202, 163, 1);
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    &__desc{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: rgb(155, 160, 159);
+        text-align: left;
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    &__price{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        color: rgb(77, 79, 78);
+    }
+    &__per{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: red;
+        color: rgba(255, 255, 255, 1);
+        padding: 8px;
+        margin: 2px;
+        border-radius: 12px;
+    }
+    &__stock{
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        color: rgb(181, 185, 183);
+        margin-bottom: 8px;
+    }
+    &__brand{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+        display: block;
+        color: rgba(64, 202, 163, 1);
+        margin-bottom: 8px;
+    }
+    &__categ{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: rgb(181, 185, 183);
+        
+    }
+}
