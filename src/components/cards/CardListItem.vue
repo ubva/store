@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="`/products/${product.id}}}`" class="cardListItem">
+    <router-link :to="`/products/${product.id}`" class="cardListItem">
         <div class="cardListItem__box">
             <img class="cardListItem__img" :src="product.thumbnail" alt="">
             <h3 class="cardListItem__title">

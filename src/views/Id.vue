@@ -10,19 +10,13 @@ import { computed, onMounted } from "vue";
 import { useRoute } from "vue-router";
 const IdStore = useProduct();
 const router = useRoute()
-// console.log(router);
-
-
-// const routeIdNew = routeId.filter(item => eror.includes(item))
-// console.log(routeId);
-
 
 let routeId = router.params.id.split("").splice(0,2)
 
 
 onMounted(async () =>{
     await IdStore.getId(routeId
-    // .join("")
+    .join("")
     );
 })
 const selectProduct = computed(()=>{
