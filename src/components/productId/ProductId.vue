@@ -19,6 +19,6 @@
 
 <script setup>
     const props = defineProps({
-        selectProduct: Array,
+        selectProduct: Object,
     });
 </script>

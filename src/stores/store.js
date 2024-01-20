@@ -12,17 +12,14 @@ export const useProduct = defineStore('product',{
       try {
         let res = await axios.get(`${import.meta.env.VITE_LINK}/?skip=${skip *12}&limit=12`)
         this.product = res.data.products
-        // console.log(res.data.products);
       } catch (error) {
         
       }
     },
     async getId (id){
-      // console.log(id);
       try {
         let nmadr = await axios.get(`${import.meta.env.VITE_LINK}/${id}`)
         this.id = nmadr.data
-        // console.log(nmadr.data);
       } catch (error) {
         
       }
